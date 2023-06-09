@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { FinancialReleases, FinancialReleasesDocument } from 'src/schemas/financial_releases.schema';
+import { FinancialReleases, FinancialReleasesDocument } from '../schemas/financial_releases.schema';
 import {dateSanitizer} from '../utils/sanitizer'
 import { format } from 'date-fns';
 @Injectable()
