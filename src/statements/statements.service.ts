@@ -30,7 +30,6 @@ export class StatementsService {
         //@ts-ignore
         statement[formattedDate][element.type].push({"date": format(element.created, 'dd/MM/yyyy - HH:mm'), 'value': element.value, "description": element.description});      
     });
-    console.log("Object.keys(statement).length", Object.keys(statement).length);
     
     if (Object.keys(statement).length > 1) {
       statement["totalPeriodo"] = 0;
